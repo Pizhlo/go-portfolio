@@ -37,6 +37,10 @@ func (server *Server) setupRouter() {
 		c.HTML(http.StatusOK, "index.html", gin.H{"title": "Главная страница"})
 	})
 
+	router.GET("/admin", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "auth_admin.html", gin.H{"title": "Войти как админ"})
+	})
+
 	router.Run()
 
 	server.router = router

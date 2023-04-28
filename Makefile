@@ -3,4 +3,7 @@ migrateup:
 migratedown:
 	migrate -path db/migration -database "postgresql://root:secret@localhost:8081/portfolio?sslmode=disable" -verbose down
 
-.PHONY: migrateup migratedown
+server:
+	go run main.go
+
+.PHONY: migrateup migratedown server
