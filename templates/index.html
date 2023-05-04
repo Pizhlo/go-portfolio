@@ -1,10 +1,44 @@
-{{ template "header.html" .}}
+<section class="section-1">
+    <h2 class="title">Привет! Меня зовут Михота Мария и я -  бэкенд разработчик на Go</h2>
+    <p class="paragraph"><br>
+      Если вы ищете исполнительного и талантливого разработчика - то вы по адресу!</br>
+    </br>Textify.js is a simple library that works with scroll-base animations, and user can use any scrolling libraries likes locomotive-scroll, smoothscroll, etc. All libraries are compatible with Textify.js.</br>
+</br>Textify.js is a provide a simple way to create custom animations. Textify give rotation, scale, translate and fade options to create your own animations, and other new options are add in future.</br>
+</br>Textify.js is a provide 20+ custom eases for create animations and fade animations.</p>
+</section>
 
-    <h1>Привет, мир!</h1>
+  <script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-  </body>
-</html>
+        const textObj = new Textify({
+        selector: ".section-1 .paragraph",
+        duration: 2000,
+        stagger: 100,
+        fade: true,
+        top: false,
+        once: false,
+        rotation: 0,
+        scale: 0.75,
+        easing: "easeOut",
+        fadeEasing: "back"
+        });
+
+        const titleObj = new TextifyTitle({
+        selector: ".section-1 .title",
+        duration: 200,
+        stagger: 30,
+        fade: true,
+        top: false,
+        reveal: true,
+        once: false,
+        rotation: 90,
+        scale: 0,
+        easing: "easeIn",
+        threshold: 0.5,
+        transformOrigin: "left center",
+        faseEasing: "back"
+        });
+
+        /* SmoothScroll */
+        var scroll = new SmoothScroll();
+
+  </script>
