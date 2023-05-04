@@ -10,22 +10,22 @@
                 <div class="card shadow-2-strong card-auth" style="border-radius: 15px;">
                     <div class="card-body p-4 p-md-5">
                         <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Авторизоваться</h3>
-                        <form action="/login" method="post" name="authForm">
+                        <form action="/admin" method="POST">
 
                             <div class="row">
                                 <div class="col-md-6 mb-4 d-flex align-items-center">
                                     <div class="form-outline datepicker w-100">
-                                        <input type="text" class="form-control form-control-lg" id="username" />
-                                        <label name="username" class="form-label">Username</label>
+                                        <input type="text" class="form-control form-control-lg" name="login" id="login"/>
+                                        <label name="login-label" class="form-label">Логин</label>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-6 mb-4 d-flex align-items-center">
                                         <div class="form-outline datepicker w-100">
-                                            <input type="password" id="password"
+                                            <input type="password" id="password" name="password"
                                                 class="form-control form-control-lg" />
-                                            <label class="form-label" name="password">Пароль</label>
+                                            <label class="form-label" name="password-label">Пароль</label>
                                         </div>
                                     </div>
 
