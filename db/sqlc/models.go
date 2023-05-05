@@ -8,6 +8,11 @@ import (
 	"time"
 )
 
+type Admin struct {
+	Login    string `json:"login"`
+	Password string `json:"password"`
+}
+
 type Education struct {
 	ID          int32     `json:"id"`
 	Name        string    `json:"name"`
