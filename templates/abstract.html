@@ -1,16 +1,14 @@
-<section class="section-1">
+<section class="abstract" id="abstract">
     <h2 class="title">Привет! Меня зовут Михота Мария и я -  бэкенд разработчик на Go</h2>
-    <p class="paragraph"><br>
-      Если вы ищете исполнительного и талантливого разработчика - то вы по адресу!</br>
-    </br>Textify.js is a simple library that works with scroll-base animations, and user can use any scrolling libraries likes locomotive-scroll, smoothscroll, etc. All libraries are compatible with Textify.js.</br>
-</br>Textify.js is a provide a simple way to create custom animations. Textify give rotation, scale, translate and fade options to create your own animations, and other new options are add in future.</br>
-</br>Textify.js is a provide 20+ custom eases for create animations and fade animations.</p>
+    <h5 class="text"><br>
+      Если вы ищете исполнительного и талантливого разработчика, то вы по адресу!</br>
+    </h5>
 </section>
 
   <script>
 
         const textObj = new Textify({
-        selector: ".section-1 .paragraph",
+        selector: ".abstract .text",
         duration: 2000,
         stagger: 100,
         fade: true,
@@ -23,7 +21,7 @@
         });
 
         const titleObj = new TextifyTitle({
-        selector: ".section-1 .title",
+        selector: ".abstract .title",
         duration: 200,
         stagger: 30,
         fade: true,
@@ -42,3 +40,5 @@
         var scroll = new SmoothScroll();
 
   </script>
+
+{{ template "expirience.html" . }}
