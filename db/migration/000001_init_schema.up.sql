@@ -23,3 +23,8 @@ CREATE TABLE "education" (
   "description" varchar NOT NULL,
   "date" timestamptz NOT NULL DEFAULT (now())
 );
+
+CREATE TABLE "admin" (
+  "login" varchar NOT NULL,
+  "password" varchar NOT NULL
+);

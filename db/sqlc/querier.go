@@ -15,6 +15,7 @@ type Querier interface {
 	DeleteEducation(ctx context.Context, id int32) error
 	GetEducations(ctx context.Context) ([]Education, error)
 	GetProjects(ctx context.Context) ([]Project, error)
+	GetUser(ctx context.Context, login string) (Admin, error)
 }
 
 var _ Querier = (*Queries)(nil)
